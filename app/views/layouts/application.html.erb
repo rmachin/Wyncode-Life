@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Wyncode Life</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <%= stylesheet_link_tag    'main' %>
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+    <script src="http://yandex.st/jquery/1.11.1/jquery.min.js"></script>
+
+<link href="http://yandex.st/bootstrap/3.1.1/css/bootstrap.min.css" media="screen" rel="stylesheet" />
+<script src="http://yandex.st/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Syncopate:700" rel="stylesheet">
+
+
+  </head>
+
+  <body>
+    <!-- Render navigation bar -->
+    <%= render "layouts/navigation" %>
+    <% if notice  %>
+    <div class="alert alert-success "><%= notice %></div>
+    <% else %>
+    <div></div>
+    <% end %>
+    <% if alert  %>
+    <div class="alert alert-success"><%= alert %></div>
+    <% else %>
+    <div></div>
+    <% end %>
+
+
+    <div class="container-fluid">
+      <%= yield %>
+      <%= render 'shared/footer' %>
+    </div>
+
+
+  </body>
+
+</html>

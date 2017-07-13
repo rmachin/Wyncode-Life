@@ -1,0 +1,60 @@
+// Place all the styles related to the Posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1300px;
+  }
+}
+.navbar > .container-fluid .navbar-brand {
+    font-size: 3.2em;
+    color: #31708f;
+}
+
+.navbar > .container-fluid .navbar-brand:hover {
+    font-size: 3.3em;
+    color: red;
+}
+
+
+.navbar-brand {
+  font-family: 'Syncopate', sans-serif;
+  margin: .8em;
+}
+
+.navbar-right {
+    font-size: large;
+    padding: 2em;
+}
+
+
+.img-size  img{
+display: block;
+max-width: 12em;
+max-height: 12em;
+border-bottom-left-radius: 2em;
+border-top-right-radius: 2em;
+
+}
+
+.show-img img  {
+  display: block;
+  border-bottom-left-radius: 2em;
+  border-top-right-radius: 2em;
+
+}
+
+
+.btn-center {
+  margin: 3em 16em;
+  display: block;
+}
+.btn-primary {
+  margin-right: .5em;
+}
+
+.btn-default {
+  margin-right: .5em;
+}
